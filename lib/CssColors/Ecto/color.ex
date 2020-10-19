@@ -23,7 +23,7 @@ defmodule CssColors.Ecto.Color do
         end
       end
   """
-  @behaviour Ecto.Type
+  use Ecto.Type
   def type, do: :string
 
   @spec cast(String.t | CssColors.color) :: {:ok, CssColors.color} | :error
